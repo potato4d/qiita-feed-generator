@@ -15,7 +15,7 @@ class Api {
         return taggedArticles.map((article) => (
           {
             id: article.id,
-            title: article.title,
+            title: article.title.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/, '&gt;'),
             description: article.body.split("\n").slice(0,3).join('').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/, '&gt;'),
             url: article.url,
             created_at: article.created_at,

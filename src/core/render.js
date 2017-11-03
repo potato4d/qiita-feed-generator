@@ -22,6 +22,6 @@ export function render (username, articles) {
   <link type="text/html" rel="alternate" href="https://qiita.com/${username}"/>
   <link type="application/atom+xml" rel="self" href="https://qpf.potato4d.me/${username}.private.atom"/>
   <title>Qiita Feed for ${username}</title>
-  <updated>${moment().format('YYYY-MM-DDTHH:mm:ssZZ')}</updated>${articleData}
+  <updated>${moment().format()}</updated>${articleData}
 </feed>`
 }
