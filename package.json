@@ -1,0 +1,16 @@
+{
+  "name": "qiita-personal-feed",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "babel-node src/index.js"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.0.0-beta.4",
+    "axios": "^0.17.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "express": "^4.16.2"
+  }
+}
