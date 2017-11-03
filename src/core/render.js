@@ -1,3 +1,5 @@
+import moment from 'moment'
+
 export function render (username, articles) {
   const articleData = articles.map((article) => (`
   <entry>
@@ -20,6 +22,6 @@ export function render (username, articles) {
   <link type="text/html" rel="alternate" href="https://qiita.com/${username}"/>
   <link type="application/atom+xml" rel="self" href="https://qpf.potato4d.me/${username}.private.atom"/>
   <title>Qiita Feed for ${username}</title>
-  <updated>2017-11-03T15:49:35Z</updated>${articleData}
+  <updated>${moment().format('YYYY-MM-DDTHH:mm:ssZZ')}</updated>${articleData}
 </feed>`
 }
