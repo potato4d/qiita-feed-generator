@@ -21,6 +21,7 @@ app.get('/feed/:user', async (req, res) => {
 
   res.header('Content-Type', 'application/atom+xml; charset=utf-8')
   res.write(xml)
+  res.end()
 })
 
 app.use(express.static('public'))
