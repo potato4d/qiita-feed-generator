@@ -1,6 +1,7 @@
 import express from 'express'
 import { render } from './core/render'
 import Api from './core/api'
+import { sortBy } from 'lodash'
 
 const app = express()
 
@@ -16,7 +17,8 @@ app.get('/feed/:user', async (req, res) => {
   user = user.replace('.atom', '')
 
   const api = new Api(token, user)
-  const articles =  await api.getTaggedArticles()
+  let articles = await api.getTaggedArticles()
+  articles = sortBy(articles, ['unixtime']).reverse()
   const xml = render(user, articles)
 
   res.header('Content-Type', 'application/atom+xml; charset=utf-8')

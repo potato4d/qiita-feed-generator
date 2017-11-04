@@ -12,6 +12,8 @@
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "express": "^4.16.2",
+    "lodash": "^4.17.4",
+    "lodash-es": "^4.17.4",
     "moment": "^2.19.1"
   }
 }

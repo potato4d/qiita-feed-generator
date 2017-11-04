@@ -1,4 +1,5 @@
 import axios from 'axios'
+import moment from 'moment'
 
 class Api {
   constructor (credential, username) {
@@ -18,6 +19,7 @@ class Api {
             title: article.title,
             description: article.body.split("\n").slice(0,3).join('').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/, '&gt;'),
             url: article.url,
+            unixtime: moment(article.created_at).unix(),
             created_at: article.created_at,
             updated_at: article.updated_at,
             icon_url: tag.icon_url,
