@@ -1,5 +1,5 @@
 # Qiita Feed Gen
 
-[ogp.png (1200×630)](https://raw.githubusercontent.com/potato4d/qiita-feed-gen/master/public/ogp.png)
+![ogp](https://user-images.githubusercontent.com/6993514/32405267-84ae7f70-c1a5-11e7-9fad-adf5ce37c666.png)
 
 Private feed generator for Qiita.
