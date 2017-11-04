@@ -7,6 +7,17 @@
   <title>Qiita Feed Gen - created by potato4d</title>
   <link href="/favicon.png" rel="icon" type="image/png">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@potato4d">
+  <meta property="og:url" content="https://qiita-feed-gen.potato4d.me">
+  <meta property="og:title" content="Qiita Feed Gen - created by potato4d">
+  <meta property="og:description" content="Qiita Feed Genは、QiitaのパーソナルフィードをRSS化するためのサービスです">
+  <meta property="og:image" content="/ogp.png">
+
+  <meta name="description" content="Qiita Feed Genは、QiitaのパーソナルフィードをRSS化するためのサービスです">
+  <meta name="keywords" content="Qiita,RSS">
+
 <style>
 html, body {
   margin: 0;
@@ -17,7 +28,7 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: Hiragino Sans;
+  font-family: Hiragino Sans, YuGothic, Noto Sans Japanese, Noto Sans CJK JP, meiryo, sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
 }
@@ -181,6 +192,15 @@ a.twitter:hover {
     </form>
   </div>
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-63818166-19"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-63818166-19');
+</script>
+
 <script>
 var $ = function (el) {return document.querySelector(el)}
 
@@ -195,10 +215,10 @@ $('#credential').addEventListener('keydown', updateLinkUrl)
 
 $('form').addEventListener('submit', function (event) {
   event.preventDefault()
+  ga('send', 'event', '', 'create-feed', '', 10);
   $('a.link').click()
   return false
 })
 </script>
-
 </body>
 </html>
