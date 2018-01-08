@@ -1,9 +1,12 @@
 import express from 'express'
 import { render } from './core/render'
 import Api from './core/api'
+import morgan from 'morgan'
 import { sortBy } from 'lodash'
 
 const app = express()
+
+app.use(morgan())
 
 app.get('/feed/:user', async (req, res) => {
   if (
