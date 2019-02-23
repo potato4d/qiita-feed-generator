@@ -1,7 +1,9 @@
 const moment = require('moment')
 
 module.exports.render = function(username, articles) {
-  const articleData = articles.map((article) => (`
+  const articleData = articles
+    .map(
+      article => `
   <entry>
     <id>tag:qiita-feed-gen.potato4d.me,2017:WatchEvent/${article.id}</id>
     <published>${article.created_at}</published>
@@ -14,7 +16,9 @@ module.exports.render = function(username, articles) {
     </author>
     <media:thumbnail height="30" width="30" url="${article.icon_url}"/>
     <content type="text">${article.description}</content>
-  </entry>`)).join('\n')
+  </entry>`
+    )
+    .join('\n')
 
   return `<?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
