@@ -1,5 +1,5 @@
 {
-  "name": "qiita-personal-feed",
+  "name": "qiita-feed-gen",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -25,6 +25,7 @@
     "react-dom": "^16.8.3"
   },
   "devDependencies": {
-    "prettier": "^1.16.4"
+    "prettier": "^1.16.4",
+    "standard-version": "^5.0.0"
   }
 }
