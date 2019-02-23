@@ -1,6 +1,6 @@
-import moment from 'moment'
+const moment = require('moment')
 
-export function render (username, articles) {
+module.exports.render = function(username, articles) {
   const articleData = articles.map((article) => (`
   <entry>
     <id>tag:qiita-feed-gen.potato4d.me,2017:WatchEvent/${article.id}</id>

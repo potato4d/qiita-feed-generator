@@ -1,5 +1,5 @@
-import axios from 'axios'
-import moment from 'moment'
+const axios = require('axios')
+const moment = require('moment')
 
 class Api {
   constructor (credential, username) {
@@ -35,4 +35,4 @@ class Api {
   }
 }
 
-export default Api
+module.exports = Api

@@ -1,0 +1,149 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #59BB0C;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Hiragino Sans, YuGothic, Noto Sans Japanese, Noto Sans CJK JP, meiryo, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  line-height: 1.0;
+}
+
+form {
+  width: 600px;
+  height: 400px;
+  max-width: calc(100vw - 30px);
+}
+
+h1, p, footer{
+  text-align: center;
+  color: #fff;
+  font-weight: 200;
+}
+
+p {
+  font-weight: 300;
+  margin: 0;
+  padding: 5px 0 15px;
+}
+
+footer {
+  font-weight: 300;
+  margin: 0;
+  padding: 15px 0;
+}
+
+.form-body {
+  padding: 15px;
+  margin-top: 15px;
+  background: #fff;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.form-group {
+  padding: 15px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+label {
+  width: 150px;
+  color: #99b099;
+  font-weight: bold;
+}
+
+input[type='text'] {
+  flex: 1;
+  height: 40px;
+  border: solid 0 transparent;
+  background: #f0f0f0;
+  color: #333;
+
+  outline: none;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 4px;
+
+  apperance: none;
+  -webkit-apperance: none;
+}
+
+.link {
+  apperance: none;
+  -webkit-apperance: none;
+  width: 200px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #fff;
+  background: #59BB0C;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer
+}
+
+.link:hover {
+  background: #418b09;
+  text-decoration: none;
+}
+
+.flex-center-between {
+  align-items: center;
+  justify-content: space-between;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+div.spacer {
+  width: 40px;
+  height: 40px;
+}
+
+a.twitter {
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  line-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #48AAE6;
+  color: #fff;
+  border-radius: 4px;
+}
+
+a.twitter:hover {
+  text-decoration: none;
+}
+
+div.message {
+  margin: 10px 0 15px;
+  font-size: 0.8em;
+}
