@@ -6,7 +6,9 @@
   "scripts": {
     "start": "NODE_ENV=production node index.js",
     "dev": "NODE_ENV=development node index.js",
-    "format": "prettier './**/*.js' --write"
+    "build": "next build",
+    "format": "prettier './**/*.js' --write",
+    "heroku-postbuild": "yarn build"
   },
   "dependencies": {
     "@babel/preset-env": "^7.0.0-beta.4",
