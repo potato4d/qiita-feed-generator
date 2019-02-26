@@ -10,6 +10,9 @@ https://qiita-feed-gen.potato4d.me/
 
 <img width="1214" alt="screen shot 2019-02-27 at 0 07 27" src="https://user-images.githubusercontent.com/6993514/53422917-b6ffe200-3a23-11e9-94a5-b46a0eef6ee4.png">
 
+<a href="https://patreon.com/potato4d">
+  <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" height="50">
+</a>
 
 ## Stacks
 
