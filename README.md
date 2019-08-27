@@ -14,12 +14,6 @@ https://qiita-feed-gen.potato4d.me/
   <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" height="50">
 </a>
 
-## Stacks
-
-- Next.js
-- Express
-- Qiita API
-
 ## How to launch development server
 
 ```bash

@@ -1,21 +1,22 @@
-
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
-  background: #59BB0C;
+  background: #59bb0c;
   width: 100vw;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: Hiragino Sans, YuGothic, Noto Sans Japanese, Noto Sans CJK JP, meiryo, sans-serif;
+  font-family: Hiragino Sans, YuGothic, Noto Sans Japanese, Noto Sans CJK JP,
+    meiryo, sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
 }
 
 * {
   box-sizing: border-box;
-  line-height: 1.0;
+  line-height: 1;
 }
 
 form {
@@ -24,7 +25,9 @@ form {
   max-width: calc(100vw - 30px);
 }
 
-h1, p, footer{
+h1,
+p,
+footer {
   text-align: center;
   color: #fff;
   font-weight: 200;
@@ -37,7 +40,7 @@ p {
 }
 
 footer {
-  font-weight: 300;
+  font-weight: 200;
   margin: 0;
   padding: 15px 0;
 }
@@ -46,7 +49,7 @@ footer {
   padding: 15px;
   margin-top: 15px;
   background: #fff;
-  border-radius: 4px;
+  border-radius: 2px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -78,7 +81,7 @@ input[type='text'] {
   outline: none;
   font-size: 16px;
   padding: 10px;
-  border-radius: 4px;
+  border-radius: 2px;
 
   apperance: none;
   -webkit-apperance: none;
@@ -87,19 +90,19 @@ input[type='text'] {
 .link {
   apperance: none;
   -webkit-apperance: none;
-  width: 200px;
+  padding: 0 12px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
   color: #fff;
-  background: #59BB0C;
+  background: #59bb0c;
   font-size: 16px;
   font-weight: bold;
-  border-radius: 4px;
+  border-radius: 2px;
   border: 0;
-  cursor: pointer
+  cursor: pointer;
 }
 
 .link:hover {
@@ -134,9 +137,9 @@ a.twitter {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #48AAE6;
+  background: #48aae6;
   color: #fff;
-  border-radius: 4px;
+  border-radius: 2px;
 }
 
 a.twitter:hover {

@@ -1,6 +1,12 @@
-const moment = require('moment')
+import { QiitaArticle } from './qiita'
 
-module.exports.render = function(username, articles) {
+export type RenderOptions = {
+  username: string
+  articles: QiitaArticle[]
+  time: string
+}
+
+export function render({ username, articles, time }: RenderOptions) {
   const articleData = articles
     .map(
       article => `
@@ -26,6 +32,6 @@ module.exports.render = function(username, articles) {
   <link type="text/html" rel="alternate" href="https://qiita.com/${username}"/>
   <link type="application/atom+xml" rel="self" href="https://qiita-feed-gen.potato4d.me/${username}.private.atom"/>
   <title>Qiita Feed for ${username}</title>
-  <updated>${moment().format()}</updated>${articleData}
+  <updated>${time}</updated>${articleData}
 </feed>`
 }
