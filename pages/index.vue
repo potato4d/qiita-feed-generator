@@ -3,7 +3,9 @@
     <div id="wrapper">
       <form @submit.prevent="handleSubmitForm">
         <h1>Qiita Feed Generator</h1>
-        <p>Generated your private Qiita RSS feed</p>
+        <p>
+          <small>Generated your private Qiita RSS feed</small>
+        </p>
         <div class="form-body">
           <div class="form-group">
             <label htmlFor="username">User ID</label>
@@ -52,10 +54,9 @@ export default Vue.extend({
     }
   },
   methods: {
-    handleSubmitForm(event) {
-      event.preventDefault()
-      const linkUrl = `/feed/${this.formData.userId || ''}.atom?token=${this
-        .formData.accessToken || ''}`
+    handleSubmitForm() {
+      const { userId, accessToken } = this.formData
+      const linkUrl = `/feed/${userId || ''}.atom?token=${accessToken || ''}`
       window.open(linkUrl)
       return false
     }

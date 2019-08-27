@@ -1,4 +1,4 @@
-import NuxtConfiguration from '@nuxt/config'
+import { Configuration } from '@nuxt/types'
 import { handler } from './api/handler'
 
 const tmp = `
@@ -40,7 +40,7 @@ const tmp = `
       </Head>
 `
 
-const config: NuxtConfiguration = {
+const config: Configuration = {
   head: {
     link: [
       { rel: 'icon', type: 'image/png', href: '/favicon.ico' },
@@ -51,12 +51,21 @@ const config: NuxtConfiguration = {
       }
     ]
   },
-  css: ['~/static/style.css'],
+  css: ['~/assets/style.css'],
   serverMiddleware: [
     {
       path: 'feed/',
       handler
     }
+  ],
+  buildModules: [
+    [
+      '@nuxt/typescript-build',
+      {
+        typeCheck: true,
+        ignoreNotFoundWarnings: true
+      }
+    ]
   ]
 }
 
