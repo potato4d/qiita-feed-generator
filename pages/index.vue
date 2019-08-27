@@ -33,7 +33,8 @@
         </div>
         <footer>
           <div class="message">
-            本サービスで利用されるアクセストークンを二次利用することはありません。
+            The access token used in this service will not be used for anything
+            other than feed generation.
           </div>
           &copy; 2017 <a href="https://github.com/potato4d">@potato4d</a>
         </footer>
