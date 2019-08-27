@@ -8,7 +8,8 @@
   "scripts": {
     "start": "nuxt start",
     "dev": "nuxt",
-    "build": "nuxt build"
+    "build": "nuxt build",
+    "format": "prettier './**/*.{css,js,ts,vue}' --write"
   },
   "dependencies": {
     "@nuxt/typescript": "^2.8.1",
@@ -19,5 +20,8 @@
     "lodash": "^4.17.15",
     "nuxt": "^2.8.1",
     "ts-node": "^8.3.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2"
   }
 }
