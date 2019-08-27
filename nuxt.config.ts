@@ -11,13 +11,13 @@ const config: Configuration = {
         property: 'twitter:image',
         content: 'https://qiita-feed-gen.potato4d.me/ogp.png'
       },
-      { property: 'og:title', content: 'Qiita Feed Gen - created by potato4d' },
+      { property: 'og:title', content: 'Qiita Feed Generator - created by potato4d' },
       { property: 'og:url', content: 'https://qiita-feed-gen.potato4d.me"' },
-      { property: 'og:title', content: 'Qiita Feed Gen - created by potato4d' },
+      { property: 'og:title', content: 'Qiita Feed Generator - created by potato4d' },
       {
         property: 'og:description',
         content:
-          'Qiita Feed Genは、QiitaのパーソナルフィードをRSS化するためのサービスです。'
+          'Qiita Feed Generator は、QiitaのパーソナルフィードをRSS化するためのサービスです。'
       },
       {
         property: 'og:image',
@@ -27,7 +27,7 @@ const config: Configuration = {
       {
         name: 'description',
         content:
-          'Qiita Feed Genは、QiitaのパーソナルフィードをRSS化するためのサービスです。'
+          'Qiita Feed Generator は、QiitaのパーソナルフィードをRSS化するためのサービスです。'
       }
     ],
     link: [
