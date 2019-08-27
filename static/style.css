@@ -37,7 +37,7 @@ p {
 }
 
 footer {
-  font-weight: 300;
+  font-weight: 200;
   margin: 0;
   padding: 15px 0;
 }
@@ -46,7 +46,7 @@ footer {
   padding: 15px;
   margin-top: 15px;
   background: #fff;
-  border-radius: 4px;
+  border-radius: 2px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -78,7 +78,7 @@ input[type='text'] {
   outline: none;
   font-size: 16px;
   padding: 10px;
-  border-radius: 4px;
+  border-radius: 2px;
 
   apperance: none;
   -webkit-apperance: none;
@@ -87,7 +87,7 @@ input[type='text'] {
 .link {
   apperance: none;
   -webkit-apperance: none;
-  width: 200px;
+  padding: 0 12px;
   height: 40px;
   display: flex;
   align-items: center;
@@ -97,7 +97,7 @@ input[type='text'] {
   background: #59BB0C;
   font-size: 16px;
   font-weight: bold;
-  border-radius: 4px;
+  border-radius: 2px;
   border: 0;
   cursor: pointer
 }
@@ -136,7 +136,7 @@ a.twitter {
   justify-content: center;
   background: #48AAE6;
   color: #fff;
-  border-radius: 4px;
+  border-radius: 2px;
 }
 
 a.twitter:hover {
