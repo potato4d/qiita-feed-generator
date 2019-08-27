@@ -11,23 +11,22 @@ export type QiitaTag = {
 }
 
 export type QiitaArticle = {
-  id: string,
-  body: string,
-  title: string,
-  description: string,
-  url: string,
-  unixtime: number,
-  created_at: string,
-  updated_at: string,
-  icon_url: string,
+  id: string
+  body: string
+  title: string
+  description: string
+  url: string
+  unixtime: number
+  created_at: string
+  updated_at: string
+  icon_url: string
   user: QiitaUser
 }
-
 
 export class Qiita {
   private username: string
 
-  constructor({token, username}: {token: string, username: string}) {
+  constructor({ token, username }: { token: string; username: string }) {
     this.username = username
     axios.defaults.headers.common['Authorization'] = `Bearer ${token}`
     axios.defaults.baseURL = 'https://qiita.com/api/v2'
@@ -40,7 +39,9 @@ export class Qiita {
       )
       let articlesByTags = await Promise.all(
         tags.map(async tag => {
-          const { data: taggedArticles }: { data: QiitaArticle[] } = await axios.get(
+          const {
+            data: taggedArticles
+          }: { data: QiitaArticle[] } = await axios.get(
             `/tags/${tag.id}/items?per_page=10`
           )
           const articles = taggedArticles.map(article => ({
@@ -66,10 +67,7 @@ export class Qiita {
           return articles as QiitaArticle[]
         })
       )
-      return articlesByTags.reduce((before, after) => ([
-        ...before,
-        ...after
-      ]))
+      return articlesByTags.reduce((before, after) => [...before, ...after])
     } catch (err) {
       console.log(err)
       return Promise.reject()

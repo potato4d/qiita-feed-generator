@@ -1,8 +1,8 @@
-import { Qiita } from "../../core/qiita"
+import { Qiita } from '../../core/qiita'
 import { render } from '../../core/render'
 import { sortBy } from 'lodash'
-import { Request, Response } from "express"
-import dayjs from "dayjs"
+import { Request, Response } from 'express'
+import dayjs from 'dayjs'
 
 export async function getPersonalFeed(req: Request, res: Response) {
   try {
@@ -14,7 +14,7 @@ export async function getPersonalFeed(req: Request, res: Response) {
     }
     let { user } = req.params
     const { token } = req.query
-    const  username = user.replace('.atom', '')
+    const username = user.replace('.atom', '')
     const api = new Qiita({ token, username })
     let articles = await api.getFollowingTagsArticles()
     const xml = render({

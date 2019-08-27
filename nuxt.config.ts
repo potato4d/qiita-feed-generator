@@ -43,13 +43,15 @@ const tmp = `
 const config: NuxtConfiguration = {
   head: {
     link: [
-      { rel: 'icon', type: 'image/png', href: '/favicon.ico'},
-      { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' }
+      { rel: 'icon', type: 'image/png', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'
+      }
     ]
   },
-  css: [
-    '~/static/style.css'
-  ],
+  css: ['~/static/style.css'],
   serverMiddleware: [
     {
       path: 'feed/',
