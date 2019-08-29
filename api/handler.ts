@@ -3,6 +3,6 @@ import * as feedRoutes from './routes/feedRoutes'
 
 const app = express()
 
-app.get('/feed/:user', feedRoutes.getPersonalFeed)
+app.get('/:user', feedRoutes.getPersonalFeed)
 
 export const handler = app

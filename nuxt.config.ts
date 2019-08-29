@@ -48,7 +48,7 @@ const config: Configuration = {
   css: ['~/assets/style.css'],
   serverMiddleware: [
     {
-      path: 'feed/',
+      path: '/feed/',
       handler
     }
   ],
