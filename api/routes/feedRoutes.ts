@@ -22,6 +22,7 @@ export async function getPersonalFeed(req: Request, res: Response) {
       articles: sortBy(articles, ['unixtime']),
       time: dayjs().format()
     })
+    res.header('Cache-Control', 'max-age=7200')
     res.header('Content-Type', 'application/atom+xml; charset=utf-8')
     res.write(xml)
     res.end()
